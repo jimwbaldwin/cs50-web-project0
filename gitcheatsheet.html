@@ -6,6 +6,7 @@
   <body>
     <h1>My notes for git.</h1>
     <h2>Useful commands</h2>
+    I'm just adding to this as I use them.
     <table>
       <tr>
         <th>Command</th>
@@ -14,12 +15,50 @@
       <tr>
         <td>git init</td>
         <td>Creates a git repository on my local machine.</td>
+      </tr>
+      <tr>
+        <td>git config --global user.email "you@example.com"</td>
+        <td>Tells git the author's email.</td>
+      </tr>
+      <tr>
+        <td>git config --global user.name "Your Name"</td>
+        <td>Tells git the author's name.</td>
+      </tr>
+      <tr>
+        <td>git add .</td>
+        <td>Adds all files in current directory to the repository.</td>
+      </tr>
+      <tr>
+        <td>git add <span class="token">filename</span></td> <!-- TODO: add some CSS to make this obvious it needs to be replaced. -->
+        <td>Adds the single specified file to the repository.</td>
+      </tr>
+      <tr>
+        <td>git commit -m "<span class="token">My commit comment goes here.</span>"</td>
+        <td>Stores the latest changes of files added seperately to the repository into git.</td> <!-- TODO: Make this description better. -->
+      </tr>
+      <tr>
+        <td>git commit -am "<span class="token">My commit comment goes here.</span>"</td>
+        <td>Stages and stores the changes of files added to the repository into git.</td> <!-- TODO: Make this description better. -->
+      </tr>
+      <tr>
+        <td>git remote add origin <span class="token">remote repo url</span></td>
+        <td>Tells git where to push our changes to.</td>
+      </tr>
+      <tr>
+        <td>git remote remove origin</td>
+        <td>Useful when you stuff something up and need to restart with a new repo :).</td>
+      </tr>
     </table>
     <h2>Reminders</h2>
     <ul>
       <li>Remember to create a .gitignore</li>
       <li>You can put comments in .gitignore using a #</li>
     </ul>
+    <h2>Resources</h2>
+      <ol>
+        <li><a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/">Adding an existing project to Github via the command line.</a></li>
+        <li>Passwords are a pain. <a href="https://help.github.com/articles/connecting-to-github-with-ssh/">Adding ssh keys to github.</a>
+      </ol>
     <a href="index.html">Back to main</a>
   </body>
 </html>
