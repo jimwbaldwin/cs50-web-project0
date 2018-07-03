@@ -45,6 +45,9 @@
         <td>Tells git where to push our changes to.</td>
       </tr>
       <tr>
+        <td class="code">git push</td>
+        <td>Sends the code from our local machine to the remote repository. This could result in conflicts.</td>
+      <tr>
         <td class="code">git remote remove origin</td>
         <td>Useful when you stuff something up and need to restart with a new repo :).</td>
       </tr>
@@ -64,6 +67,11 @@
         <td class="code">git push --set-upstream origin <span class="token">branchname</span></td>
         <td>Creates the branch in the remote repository "origin". This is a prerequisite to pushing a new branch.</td>
       </tr>
+      <tr>
+        <td class="code">git pull</td>
+        <td>Can also be done in 2 commands <span class="code">git fetch</span> and <span class="code">git merge origin/master</span>.
+          Downloads the new commits from the remote repository and moves to the latest commit.</td>
+        </tr>
     </table>
     <h2>Reminders</h2>
     <ul>
