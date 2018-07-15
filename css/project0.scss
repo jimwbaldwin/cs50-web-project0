@@ -1,7 +1,28 @@
+$primary-bg: #303030;
+$primary-text: #B3B3B3;
+
+$secondary-bg: #424242;
+$secondary-text: #F0F0F0;
+
+body{
+  background-color:$primary-bg;
+  color: $primary-text;
+}
+
 h1 {
 text-align: center;
 }
 
+.card {
+  background-color:$secondary-bg;
+}
+
+.jumbotron {
+  background-color: $secondary-bg;
+  color:$secondary-text;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
 .col-12 {
   margin-top:10px;
 }
