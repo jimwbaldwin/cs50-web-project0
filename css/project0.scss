@@ -1,0 +1,83 @@
+h1 {
+text-align: center;
+}
+
+.col-12 {
+  margin-top:10px;
+}
+
+.code {
+  font-family: monospace;
+  color:green;
+}
+
+.token {
+  color: magenta;
+  font-style: italic;
+}
+
+.token::before {
+  content:"<"
+}
+
+.token::after {
+  content:">"
+}
+
+/* Extra small devices (portrait phones, 0px and up, default) */
+@media (min-width: 0px ) {
+  h1::before {content:"Extra small ";}
+
+  .my-card-img {
+    height:200px;
+    padding: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px )  {
+  h1::before {content:"Small ";}
+
+  .nav-item {
+    font-size:90%
+  }
+
+  .my-card-img {
+    height:200px;
+    padding: 10px;
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1::before {content:"Medium ";}
+
+  .nav-item {
+    font-size:100%
+  }
+
+  .my-card-img {
+    height:150px;
+    padding: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1::before {content:"Large ";}
+  .my-card-img {
+    height:150px;
+    padding: 10px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+   h1::before {content:"Extra large ";}
+   .my-card-img {
+     height:200px;
+     padding: 10px;
+   }
+}
