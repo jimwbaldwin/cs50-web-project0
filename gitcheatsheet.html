@@ -47,28 +47,28 @@
           <td>Creates a git repository on my local machine.</td>
         </tr>
         <tr>
-          <td class="code">git config --global user.email "you@example.com"</td>
+          <td class="code">git config --global user.email "<span class="token">you@example.com</span>"</td>
           <td>Tells git the author's email.</td>
         </tr>
         <tr>
-          <td class="code">git config --global user.name "Your Name"</td>
+          <td class="code">git config --global user.name "<span class="token">Your Name</span>"</td>
           <td>Tells git the author's name.</td>
         </tr>
         <tr>
           <td class="code">git add .</td>
-          <td>Adds all files in current directory to the repository.</td>
+          <td>Adds all files in current directory to the repository index.</td>
         </tr>
         <tr>
-          <td class="code">git add <span class="token">filename</span></td> <!-- TODO: add some CSS to make this obvious it needs to be replaced. -->
-          <td>Adds the single specified file to the repository.</td>
+          <td class="code">git add <span class="token">filename</span></td>
+          <td>Adds the single specified file to the repository index.</td>
         </tr>
         <tr>
           <td class="code">git commit -m "<span class="token">My commit comment goes here.</span>"</td>
-          <td>Stores the latest changes of files added seperately to the repository into git.</td> <!-- TODO: Make this description better. -->
+          <td>Records the changes of files added by git add to the local git repository.</td>
         </tr>
         <tr>
           <td class="code">git commit -am "<span class="token">My commit comment goes here.</span>"</td>
-          <td>Stages and stores the changes of files added to the repository into git.</td> <!-- TODO: Make this description better. -->
+          <td>Firstly it adds changed files into the index like <span class="code">git add</span>, then it records the changes of files to the local git repository.</td>
         </tr>
         <tr>
           <td class="code">git remote add origin <span class="token">remote repo url</span></td>
@@ -111,18 +111,24 @@
           <td>Deletes the branch called <span class="token">branchname</span>.</td>
         </tr>
       </table>
-
-    <h2>Reminders</h2>
-    <ul>
-      <li>Remember to create a .gitignore</li>
-      <li>You can put comments in .gitignore using a #</li>
-    </ul>
-    <h2>Resources</h2>
-      <ol>
-        <li><a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/">Adding an existing project to Github via the command line.</a></li>
-        <li>Passwords are a pain. <a href="https://help.github.com/articles/connecting-to-github-with-ssh/">Adding ssh keys to github.</a></li>
-        <li>A good explaination of <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">git merge</a>.
-      </ol>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2>Reminders</h2>
+          <ul>
+            <li>Remember to create a .gitignore</li>
+            <li>You can put comments in .gitignore using a #</li>
+            <li>Create a README.md file with useful information about the project.</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h2>Resources</h2>
+            <ol>
+              <li><a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/">Adding an existing project to Github via the command line.</a></li>
+              <li>Passwords are a pain. <a href="https://help.github.com/articles/connecting-to-github-with-ssh/">Adding ssh keys to github.</a></li>
+              <li>A good explaination of <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">git merge</a>.
+            </ol>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
