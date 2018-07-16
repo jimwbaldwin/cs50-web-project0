@@ -2,15 +2,22 @@ body {
   background-color: #303030;
   color: #B3B3B3; }
 
+.jumbotron {
+  background-color: #424242;
+  color: #F0F0F0; }
+
 h1 {
   text-align: center; }
+
+ol li a {
+  color: #4183C4; }
+ol li a:hover {
+  color: #4183C4; }
 
 .card {
   background-color: #424242; }
 
 .jumbotron {
-  background-color: #424242;
-  color: #F0F0F0;
   margin-top: 5px;
   margin-bottom: 20px; }
 
