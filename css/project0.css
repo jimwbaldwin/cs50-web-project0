@@ -17,9 +17,14 @@ ol li a:hover {
 .card {
   background-color: #424242; }
 
+.card-title {
+  padding-top: 1em; }
+
 .jumbotron {
   margin-top: 5px;
   margin-bottom: 20px; }
+  .jumbotron > hr {
+    border-color: #F0F0F0; }
 
 .col-12 {
   margin-top: 10px; }
@@ -37,6 +42,15 @@ ol li a:hover {
 
 .token::after {
   content: ">"; }
+
+.scotch-img {
+  border-radius: 5px;
+  background-color: #B3B3B3;
+  height: 250px; }
+
+#scotch-glasses {
+  border-radius: 10px;
+  background-color: white; }
 
 /* Extra small devices (portrait phones, 0px and up, default) */
 @media (min-width: 0px) {

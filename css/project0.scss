@@ -41,11 +41,21 @@ ol {
   background-color:$secondary-bg;
 }
 
+.card-title {
+  padding-top: 1em;
+}
+
 .jumbotron {
   @extend %secondary;
   margin-top: 5px;
   margin-bottom: 20px;
+
+  > hr {
+    border-color: $secondary-text;
+  }
 }
+
+//.jumbotron
 .col-12 {
   margin-top:10px;
 }
@@ -68,6 +78,17 @@ ol {
   content:">"
 }
 
+.scotch-img {
+  border-radius: 5px;
+  background-color: $primary-text;
+  height:250px;
+}
+
+#scotch-glasses {
+  border-radius: 10px;
+  background-color: white;
+}
+
 /* Extra small devices (portrait phones, 0px and up, default) */
 @media (min-width: 0px ) {
   #my-bootstrap-size {
@@ -79,9 +100,11 @@ ol {
     height:200px;
     padding: 10px;
   }
+
+
 }
 
-#my-bootstrap-size {  
+#my-bootstrap-size {
     text-align:center;
 }
 
